@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <title>Linux</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="topnav" id="myTopnav">
+
+        <div class="headerright">
+            <a href="http://localhost:8080/home.html">Home</a>
+            <a href="http://localhost:8080/about.html">About</a>
+            <a href="http://localhost:8080/git.html">Git</a>
+            <a href="http://localhost:8080/docker.html">Docker</a>
+            <a href="http://localhost:8080/webserver.html">Web Server</a>
+            <a style="background-color: cornflowerblue;" href="http://localhost:8080/linux.html">Linux</a>
+            <a href="http://localhost:8080/vi.html">Vi</a>
+        </div>
+        <a class="logo" href="http://localhost:8080/home.html">FF</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<div class="footer">
+    <p>© Fahad 2021</p>
+</div>
+
+
+</body>
+</html>
