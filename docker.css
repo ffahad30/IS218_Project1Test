@@ -1,5 +1,5 @@
-html{
-    background-color: #202326;
+.content{
+    background-color: #2c3034;
 }
 
 .topnav {
@@ -73,6 +73,60 @@ html{
     color: white;
 }
 
+.column {
+    float: right;
+    padding: 0 20px;
+    position:relative;
+}
+
+.column.side {
+    width: 15%;
+    float:right;
+    margin:15px;
+    position:relative;
+    margin-top:20px;
+    text-align: center;
+}
+
+.column.middle {
+    width: 70%;
+    float:left;
+    position:relative;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.content{
+    color:white;
+    padding-bottom: 5rem;
+    position:absolute;
+    line-height: 1.8;
+
+}
+h2{
+    color:white;
+}
+
+h1{
+    font-size: 55px;
+    position:relative;
+    color: cornflowerblue;
+    padding-bottom: 3%;
+}
+
+p {
+    padding-inline-start: 16px;
+}
 
 .footer {
     position: fixed;
@@ -88,7 +142,6 @@ html{
     padding-right: 0;
 }
 
-
 .container {
     width: 40%;
 }
@@ -98,4 +151,18 @@ a {
 }
 a:hover {
     color: #755d2f;
+}
+
+.calltoaction {
+    padding: 10px 25px;
+    font-size: 14px;
+    font-family: "Dubai", serif;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
 }
